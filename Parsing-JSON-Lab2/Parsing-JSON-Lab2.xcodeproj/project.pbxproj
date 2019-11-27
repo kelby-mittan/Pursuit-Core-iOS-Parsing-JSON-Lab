@@ -11,6 +11,8 @@
 		023ED8DA238DA96E00BA2DDA /* WeatherDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED8D9238DA96E00BA2DDA /* WeatherDetailController.swift */; };
 		023ED8DC238DB52F00BA2DDA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED8DB238DB52F00BA2DDA /* Colors.swift */; };
 		023ED8DE238DBD2500BA2DDA /* ColorsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED8DD238DBD2500BA2DDA /* ColorsDetailController.swift */; };
+		023ED8E2238DD48B00BA2DDA /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED8E1238DD48B00BA2DDA /* Users.swift */; };
+		023ED8E4238DD4C000BA2DDA /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED8E3238DD4C000BA2DDA /* UserDetailController.swift */; };
 		02DB3201238C7798004A5E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB3200238C7798004A5E9F /* AppDelegate.swift */; };
 		02DB3203238C7798004A5E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB3202238C7798004A5E9F /* SceneDelegate.swift */; };
 		02DB3205238C7798004A5E9F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB3204238C7798004A5E9F /* WeatherViewController.swift */; };
@@ -29,6 +31,8 @@
 		023ED8D9238DA96E00BA2DDA /* WeatherDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailController.swift; sourceTree = "<group>"; };
 		023ED8DB238DB52F00BA2DDA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		023ED8DD238DBD2500BA2DDA /* ColorsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailController.swift; sourceTree = "<group>"; };
+		023ED8E1238DD48B00BA2DDA /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		023ED8E3238DD4C000BA2DDA /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = "<group>"; };
 		02DB31FD238C7798004A5E9F /* Parsing-JSON-Lab2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parsing-JSON-Lab2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DB3200238C7798004A5E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02DB3202238C7798004A5E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0252A52C238ED204003F1C5E /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				02DB3214238C7D7E004A5E9F /* rectangleCitiesWeather.json */,
+				02DB3204238C7798004A5E9F /* WeatherViewController.swift */,
+				023ED8D9238DA96E00BA2DDA /* WeatherDetailController.swift */,
+				023ED8D5238D76B700BA2DDA /* WeatherCities.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		0252A52D238ED228003F1C5E /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				02DB321A238C8ACE004A5E9F /* colors.json */,
+				02DB3216238C81ED004A5E9F /* ColorsViewController.swift */,
+				023ED8DD238DBD2500BA2DDA /* ColorsDetailController.swift */,
+				023ED8DB238DB52F00BA2DDA /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		0252A52E238ED283003F1C5E /* RanUsers */ = {
+			isa = PBXGroup;
+			children = (
+				02DB321C238C8E9A004A5E9F /* ranUsers.json */,
+				02DB3218238C822D004A5E9F /* RanUserController.swift */,
+				023ED8E3238DD4C000BA2DDA /* UserDetailController.swift */,
+				023ED8E1238DD48B00BA2DDA /* Users.swift */,
+			);
+			path = RanUsers;
+			sourceTree = "<group>";
+		};
 		02DB31F4238C7798004A5E9F = {
 			isa = PBXGroup;
 			children = (
@@ -76,16 +113,9 @@
 			children = (
 				02DB3200238C7798004A5E9F /* AppDelegate.swift */,
 				02DB3202238C7798004A5E9F /* SceneDelegate.swift */,
-				02DB3214238C7D7E004A5E9F /* rectangleCitiesWeather.json */,
-				02DB3204238C7798004A5E9F /* WeatherViewController.swift */,
-				023ED8D9238DA96E00BA2DDA /* WeatherDetailController.swift */,
-				023ED8D5238D76B700BA2DDA /* WeatherCities.swift */,
-				02DB321A238C8ACE004A5E9F /* colors.json */,
-				02DB3216238C81ED004A5E9F /* ColorsViewController.swift */,
-				023ED8DD238DBD2500BA2DDA /* ColorsDetailController.swift */,
-				023ED8DB238DB52F00BA2DDA /* Colors.swift */,
-				02DB321C238C8E9A004A5E9F /* ranUsers.json */,
-				02DB3218238C822D004A5E9F /* RanUserController.swift */,
+				0252A52C238ED204003F1C5E /* Weather */,
+				0252A52D238ED228003F1C5E /* Colors */,
+				0252A52E238ED283003F1C5E /* RanUsers */,
 				02DB3206238C7798004A5E9F /* Main.storyboard */,
 				02DB3209238C779B004A5E9F /* Assets.xcassets */,
 				02DB320B238C779B004A5E9F /* LaunchScreen.storyboard */,
@@ -170,7 +200,9 @@
 			files = (
 				02DB3205238C7798004A5E9F /* WeatherViewController.swift in Sources */,
 				023ED8DC238DB52F00BA2DDA /* Colors.swift in Sources */,
+				023ED8E2238DD48B00BA2DDA /* Users.swift in Sources */,
 				023ED8D6238D76B700BA2DDA /* WeatherCities.swift in Sources */,
+				023ED8E4238DD4C000BA2DDA /* UserDetailController.swift in Sources */,
 				02DB3201238C7798004A5E9F /* AppDelegate.swift in Sources */,
 				023ED8DE238DBD2500BA2DDA /* ColorsDetailController.swift in Sources */,
 				02DB3217238C81ED004A5E9F /* ColorsViewController.swift in Sources */,
